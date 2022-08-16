@@ -7,7 +7,7 @@
     "start": "node app.js",
     "app": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix worksheet3 && npm run build --prefix worksheet3"
+    "heroku-postbuild": "“heroku-postbuild”: “cd client && npm install && npm run build”"
   },
   "repository": {
     "type": "git",

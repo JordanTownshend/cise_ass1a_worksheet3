@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');
 const path = require('path');
+const uri = process.env.MONGODB_URI;
 
 // routes
 const books = require('./routes/api/books');

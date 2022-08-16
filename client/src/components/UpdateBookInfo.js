@@ -19,7 +19,7 @@ class UpdateBookInfo extends Component {
   componentDidMount() {
     // console.log("Print id: " + this.props.match.params.id);
     axios
-      .get('/api/books/'+this.props.match.params.id)
+      .get('https://worksheet3heroku.herokuapp.com/api/books/'+this.props.match.params.id)
       .then(res => {
         // this.setState({...this.state, book: res.data})
         this.setState({
